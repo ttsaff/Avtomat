@@ -1,3 +1,3 @@
-name = "Саша"
+my_name = "Саша"
 
-print ("Меня зовут", name)
+print ("Меня зовут", my_name)
