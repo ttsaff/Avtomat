@@ -6,10 +6,10 @@ class User:
 		self.lname = last_name
 
 	def sayLName(self):
-		print("Меня зовут ", self.fname)
+		print("Моя фамилия ", self.lname)
 
 	def sayFName(self):
-		print("Моя фамилия ", self.lname)
+		print("Меня зовут ", self.fname)
 	
 	def sayName(self):
 		print("Полное имя ", self.fname, self.lname)
