@@ -27,7 +27,7 @@ def test_add_student(db):
         {
             "user_id": user_id,
             "level": "Beginner",
-            "education_form": "online",
+            "education_form": "personal",
             "subject_id": 1
         }
     )
@@ -59,8 +59,8 @@ def test_update_student_level(db):
         {
             "user_id": user_id,
             "level": "Beginner",
-            "education_form": "offline",
-            "subject_id": 2
+            "education_form": "personal",
+            "subject_id": 1
         }
     )
 
@@ -100,8 +100,8 @@ def test_delete_student(db):
         {
             "user_id": user_id,
             "level": "Elementary",
-            "education_form": "online",
-            "subject_id": 3
+            "education_form": "personal",
+            "subject_id": 1
         }
     )
 
