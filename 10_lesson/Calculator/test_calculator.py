@@ -8,7 +8,9 @@ from calculator_page import CalculatorPage
 
 
 @allure.title("Проверка работы Slow Calculator: 7 + 8 = 15")
-@allure.description("Открываем slow-calculator, настраиваем задержку, вводим 7 + 8 и проверяем результат 15.")
+@allure.description(
+    "Открываем slow-calculator, настраиваем задержку, вводим 7 + 8 и проверяем результат 15."
+)
 @allure.feature("Calculator")
 @allure.severity(severity_level.NORMAL)
 @pytest.mark.calculator

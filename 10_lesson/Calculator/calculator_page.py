@@ -1,4 +1,3 @@
-from typing import Any
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
@@ -45,7 +44,8 @@ class CalculatorPage:
         Устанавливает задержку выполнения операций калькулятора.
 
         Параметры:
-            value (str): Значение задержки (в миллисекундах или как предусмотрено страницей) в виде строки.
+            value (str): Значение задержки (в миллисекундах или как
+            предусмотрено страницей) в виде строки.
 
         Возвращает:
             None

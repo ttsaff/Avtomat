@@ -10,7 +10,9 @@ from checkout_page import CheckoutPage
 
 
 @allure.title("Проверка итоговой суммы в магазине (корзина)")
-@allure.description("Добавляем несколько товаров, заполняем форму оформления и проверяем итоговую сумму заказа.")
+@allure.description(
+    "Добавляем несколько товаров, заполняем форму оформления и проверяем итоговую сумму заказа."
+)
 @allure.feature("Shop")
 @allure.severity(severity_level.CRITICAL)
 @pytest.mark.shop
@@ -41,11 +43,7 @@ def test_shop_total():
             cart_page.click_checkout()
 
         with allure.step("Заполнить форму оплаты"):
-            checkout_page.fill_form(
-                "Alex",
-                "Ivanov",
-                "12345"
-            )
+            checkout_page.fill_form("Alex", "Ivanov", "12345")
 
         @allure.step("Проверка: итоговая строка равна '{expected}'")
         def check_total(actual: str, expected: str) -> None:
